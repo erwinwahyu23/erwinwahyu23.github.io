@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--boxicon -->
+
+    <script src="https://kit.fontawesome.com/0ccb3c28d8.js" crossorigin="anonymous"></script> <!-- Font awesome -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <!--google font -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">portfolio<span>.</span></a>
+        <nav class="navbar" id="sidemenu">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#services" style="--i:3;">Services</a>
+            <a href="#portfolio" style="--i:4;">Portfolio</a>
+            <a href="#contact" style="--i:5;">Contact</a>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </nav>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </header>
+    <!-- -----------------------Home----------------------- -->
+    <section id="home">
+        <div class="home-content">
+            <h3>Hi, It's Me</h3>
+            <h1>Erwin Wahyu</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur maxime praesentium hic
+                inventore vel obcaecati recusandae voluptates aliquam dolores!</p>
+            <div class="social-media">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-twitter'></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="CV-Erwin Wahyudi.pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="cat.jpg" alt="">
+        </div>
+    </section>
+    <!-- ----------------------about------------------------- -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="cat.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis odit, quia debitis quaerat
+                        fugiat dolore commodi ducimus quisquam! Iure ipsa sequi magnam, dicta natus aspernatur.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>WEB DEVELOPMENT</span><br> Fullstack Web Developer</li>
+                            <li><span>APP DEVELOPMENT</span><br>Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>DIGITAL SCORING</span><br>Make System For Referee of Pencak Silat</li>
+                            <li><span>ACADEMIC SYSTEM</span><br>Building System for senior hight school</li>
+                            <li><span>PORTFOLIO</span><br>Create global elite being super power</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UIN SUSKA RIAU</span><br>Bachelor degree informatic enginee</li>
+                            <li><span>SMK NUSANTARA</span><br> networking and computer technical</li>
+                            <li><span>MTs ASSYAKIRIN</span><br>junior hight school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=======================SERVICES================== -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde voluptas maxime nulla placeat
+                        sunt atque voluptatibus quae, quas sapiente.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-alt"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde voluptas maxime nulla placeat
+                        sunt atque voluptatibus quae, quas sapiente.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde voluptas maxime nulla placeat
+                        sunt atque voluptatibus quae, quas sapiente.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=======================PORTFOLIO================== -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work4.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, enim? Exercitationem vel hic
+                            et? Vitae quidem pariatur modi autem delectus eos rerum totam ipsum ex.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, enim? Exercitationem vel hic
+                            et? Vitae quidem pariatur modi autem delectus eos rerum totam ipsum ex.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work6.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopp App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, enim? Exercitationem vel hic
+                            et? Vitae quidem pariatur modi autem delectus eos rerum totam ipsum ex.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn2">See more</a>
+        </div>
+    </section>
+    <!-- --------------------------contact---------------------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> erwinwahyudi7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 085365166479</p>
+                    <div class="social-medias">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="CV-Erwin Wahyudi.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Type your message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------footer-------------------------------- -->
+    <footer class="copyright">
+        <p>copyright<sup>&copy;</sup> 2023 ErwinWahyudi</p>
+    </footer>
+
+    <script>
+        let sidemenus = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenus.style.right = "0";
+        }
+        function closemenu() {
+            sidemenus.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhmV4L3mnjD68uU1PKup-RUFrlyt6Uy22bkOb1PWid0MlirCXcBt5nfKfmjrr7SFk/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message send successfully'
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

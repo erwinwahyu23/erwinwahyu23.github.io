@@ -29,8 +29,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   z-index: 1;
   /* border: 1px solid white; */
 }
@@ -51,6 +51,11 @@ body {
   display: flex;
   justify-content: space-between;
   width: 400px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .navbar a {
   color: #bac9d8;
@@ -517,14 +522,24 @@ form .btn3 {
   }
 }
 
+/* ---------------responsive------------------ */
+
 @media screen and (max-width: 768px) {
   .home-img img {
     width: 250px;
   }
-
+  .home-content h3 {
+    font-size: 25px;
+  }
+  .home-content h1 {
+    font-size: 46px;
+  }
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
+  }
+  .sub-title {
+    font-size: 46px;
   }
   .contact-left {
     flex-basis: 100%;
@@ -542,8 +557,7 @@ form .btn3 {
   }
   .header nav {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+
     background: #04424d;
     position: absolute;
     top: 0;
@@ -551,13 +565,16 @@ form .btn3 {
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 28px;
     z-index: 2;
     transition: right 0.5s;
     margin-right: 0px;
   }
-  .header .nav {
-    border: 1px solid;
+  .header nav ul {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+    margin-top: 70px;
   }
   .header nav .fas {
     position: absolute;
@@ -578,6 +595,9 @@ form .btn3 {
   .home-content {
     margin-top: 0;
   }
+  /* .home-content p{
+    text-align: justify;
+  } */
   .home-img img {
     margin-top: 0;
     width: 200px;

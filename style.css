@@ -101,7 +101,6 @@ body {
 .home-content {
   margin-top: 120px;
   max-width: 600px;
-  /* flex-basis: 65%; */
   /* border: 1px solid; */
 }
 .home-img {
@@ -526,7 +525,11 @@ form .btn3 {
 
 @media screen and (max-width: 768px) {
   .home-img img {
-    width: 250px;
+    display: none;
+  }
+  .home-content {
+    padding-top: 50px;
+    margin-right: -18px;
   }
   .home-content h3 {
     font-size: 25px;
@@ -557,7 +560,6 @@ form .btn3 {
   }
   .header nav {
     display: flex;
-
     background: #04424d;
     position: absolute;
     top: 0;
@@ -574,12 +576,17 @@ form .btn3 {
     flex-direction: column;
     justify-content: space-between;
     height: 320px;
-    margin-top: 70px;
+    margin-top: 60px;
+    width: 80%;
+    align-items: center;
+  }
+  .header nav ul a {
+    text-align: center;
   }
   .header nav .fas {
     position: absolute;
     top: 26px;
-    left: 26px;
+    right: 45px;
     cursor: pointer;
     margin-top: 20px;
     font-size: 35px;
@@ -594,10 +601,8 @@ form .btn3 {
   }
   .home-content {
     margin-top: 0;
+    margin-right: 0;
   }
-  /* .home-content p{
-    text-align: justify;
-  } */
   .home-img img {
     margin-top: 0;
     width: 200px;

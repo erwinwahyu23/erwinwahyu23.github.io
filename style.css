@@ -593,10 +593,13 @@ form .btn3 {
   }
 }
 @media screen and (max-width: 600px) {
+  .header {
+    padding: 10px 5%;
+  }
   #home {
     flex-direction: column-reverse;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding: 0 5% 50px;
     height: 100%;
   }
   .home-content {
@@ -611,5 +614,27 @@ form .btn3 {
   }
   .home-img img:hover {
     box-shadow: none;
+  }
+  #about {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #services {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #portfolio {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .services-list {
+    margin-top: 25px;
+  }
+  .work-list {
+    margin-top: 25px;
+  }
+  #contact {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }

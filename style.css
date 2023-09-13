@@ -563,8 +563,8 @@ form .btn3 {
     background: #04424d;
     position: absolute;
     top: 0;
-    right: -200px;
-    width: 200px;
+    right: -250px;
+    width: 250px;
     height: 100vh;
     padding-top: 50px;
     padding-left: 28px;
@@ -576,7 +576,7 @@ form .btn3 {
     flex-direction: column;
     justify-content: space-between;
     height: 320px;
-    margin-top: 60px;
+    margin-top: 80px;
     width: 80%;
     align-items: center;
   }
@@ -586,7 +586,7 @@ form .btn3 {
   .header nav .fas {
     position: absolute;
     top: 26px;
-    right: 45px;
+    right: 77px;
     cursor: pointer;
     margin-top: 20px;
     font-size: 35px;
@@ -636,5 +636,16 @@ form .btn3 {
   #contact {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .header nav ul {
+    margin-top: 50px;
+  }
+  .header nav .fas {
+    position: absolute;
+    top: -8px;
+    right: 23px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 35px;
   }
 }
